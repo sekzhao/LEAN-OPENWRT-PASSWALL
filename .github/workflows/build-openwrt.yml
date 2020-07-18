@@ -56,7 +56,7 @@ jobs:
       run: git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
     
     - name: Add Passwall
-      run: cd openwrt && echo -e "\nsrc-git lienol https://github.com/Lienol/openwrt-package" >> feeds.conf.default
+      run: cd openwrt && echo -e "\nsrc-git lienol https://github.com/sekzhao/lienol-openwrt-package" >> feeds.conf.default
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
